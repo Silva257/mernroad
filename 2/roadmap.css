@@ -1,0 +1,118 @@
+/* roadmaps.css — external CSS for the timeline */
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#9aa4b2;
+  --accent:#60a5fa;
+  --glass: rgba(255,255,255,0.03);
+  --maxw:1100px;
+  --radius:12px;
+  --gap:16px;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color-scheme: dark;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background: linear-gradient(180deg,#071028 0%, #07182e 200%);
+  color: #e6eef8;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  padding:32px;
+  display:flex;
+  justify-content:center;
+  font-size:15px;
+}
+
+.site-header{
+  max-width:var(--maxw);
+  width:100%;
+  margin-bottom:20px;
+  text-align:center;
+}
+.site-header h1{
+  margin:0 0 6px 0;
+  font-size:28px;
+  letter-spacing:-0.4px;
+}
+.lead{color:var(--muted); margin:8px 0 12px 0}
+nav a{color:var(--accent); text-decoration:none; margin:0 6px}
+
+main.timeline{
+  max-width:var(--maxw);
+  width:100%;
+  display:grid;
+  grid-template-columns: 1fr 340px;
+  gap:var(--gap);
+  align-items:start;
+}
+
+/* Left column: timeline cards */
+main.timeline .card{
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius:var(--radius);
+  padding:18px;
+  margin-bottom:14px;
+  box-shadow: 0 6px 20px rgba(2,6,23,0.5);
+  border: 1px solid rgba(255,255,255,0.03);
+}
+main.timeline .intro{grid-column:1 / -1}
+main.timeline .month h3{margin:0 0 8px 0; color:#fff}
+main.timeline .month p{margin:6px 0}
+main.timeline .month p.small{font-size:13px; color:var(--muted)}
+
+/* Right column: tables & resources */
+aside.tables{
+  padding:0;
+}
+.table-card{
+  margin:0 0 14px 0;
+  padding:16px;
+  border-radius:12px;
+  background:var(--card);
+  border:1px solid rgba(255,255,255,0.02);
+}
+.table-card table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:14px;
+  background:transparent;
+}
+.table-card th{
+  text-align:left;
+  padding:8px;
+  color:var(--muted);
+  font-weight:600;
+  font-size:13px;
+}
+.table-card td{
+  padding:8px;
+  border-top:1px dashed rgba(255,255,255,0.03);
+}
+.table-card code{background:rgba(0,0,0,0.25); padding:4px 6px; border-radius:6px; font-size:13px}
+
+/* Resources and notes span full width */
+.resources, .notes, .site-footer{
+  grid-column:1 / -1;
+  margin-top:18px;
+  padding:16px;
+  background:var(--card);
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,0.02);
+}
+.resources ul, .notes ul{margin:0; padding-left:18px; color:var(--muted)}
+.site-footer{text-align:center; color:var(--muted); font-size:14px}
+
+/* Responsive */
+@media (max-width:1000px){
+  main.timeline{
+    grid-template-columns:1fr;
+  }
+  aside.tables{order:2}
+}
+
+/* small niceties */
+a{color:var(--accent)}
+h2{margin:8px 0 12px 0; font-size:20px}

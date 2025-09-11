@@ -1,0 +1,727 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MERN & React Native — 3yr6mo Table Roadmap</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <h1 id="main-title" class="typewriter" aria-live="polite">MERN &amp; React Native — 3 Years 6 Months Roadmap (42 months)</h1>
+      <p class="lead">3–4 hrs/day. Table-only layout grouped by phases. Each row = 1 month: concepts (Master / Learn / Aware), projects, clickable resources, milestone.</p>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="#phase-1">Frontend Foundations (1–12)</a>
+        <a href="#phase-2">Advanced JS &amp; React (13–24)</a>
+        <a href="#phase-3">Backend &amp; MERN (25–33)</a>
+        <a href="#phase-4">React Native &amp; Projects (34–42)</a>
+        <a href="#notes">Notes &amp; Links</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Phase 1 -->
+    <section id="phase-1" class="phase reveal">
+      <h2>Phase 1 — Frontend Foundations (Months 1–12)</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Month</th>
+              <th>Master</th>
+              <th>Learn</th>
+              <th>Aware</th>
+              <th>Project</th>
+              <th>Resources</th>
+              <th>Milestone</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Month 1 -->
+            <tr>
+              <td>1</td>
+              <td>Semantic HTML (header, main, nav, section, footer); accessibility basics (alt, headings, ARIA)</td>
+              <td>Forms structure, meta tags, favicons</td>
+              <td>Web Components (concept)</td>
+              <td>Personal portfolio HTML skeleton + contact form (static)</td>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN — HTML</a><br>
+                <a href="https://www.freecodecamp.org/learn/responsive-web-design/" target="_blank" rel="noopener noreferrer">freeCodeCamp — Responsive Web Design</a>
+              </td>
+              <td>Comfortable writing semantic, accessible HTML pages</td>
+            </tr>
+
+            <!-- Month 2 -->
+            <tr>
+              <td>2</td>
+              <td>Box model, selectors, specificity, responsive media queries</td>
+              <td>Flexbox basics, CSS variables</td>
+              <td>Sass (know when to use)</td>
+              <td>Style portfolio home page; responsive nav & hero</td>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer">MDN — CSS</a><br>
+                <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="noopener noreferrer">CSS-Tricks — Flexbox guide</a>
+              </td>
+              <td>Produce responsive layouts with Flexbox</td>
+            </tr>
+
+            <!-- Month 3 -->
+            <tr>
+              <td>3</td>
+              <td>CSS Grid (tracks, areas, responsive grids)</td>
+              <td>Combine Grid + Flexbox patterns</td>
+              <td>CSS-in-JS tradeoffs (awareness)</td>
+              <td>Multi-section portfolio with Grid-based gallery</td>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target="_blank" rel="noopener noreferrer">MDN — Grid</a><br>
+                <a href="https://cssgridgarden.com/" target="_blank" rel="noopener noreferrer">Grid Garden (practice)</a>
+              </td>
+              <td>Use Grid confidently for page layouts</td>
+            </tr>
+
+            <!-- Month 4 -->
+            <tr>
+              <td>4</td>
+              <td>CSS transitions, keyframe animations, transform & opacity for performant animation</td>
+              <td>Micro-interactions, prefers-reduced-motion</td>
+              <td>When to use JS animations vs CSS animations</td>
+              <td>Animate portfolio: hero entrance, nav transitions, gallery hover effects</td>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations" target="_blank" rel="noopener noreferrer">MDN — Animations</a><br>
+                <a href="https://css-tricks.com/almanac/properties/a/animation/" target="_blank" rel="noopener noreferrer">CSS-Tricks — Animation</a>
+              </td>
+              <td>Add polished CSS animations to UI</td>
+            </tr>
+
+            <!-- Month 5 -->
+            <tr>
+              <td>5</td>
+              <td>JS basics: let/const, types, functions, scope, closures</td>
+              <td>DOM basics: querySelector, event listeners, forms handling</td>
+              <td>Historical patterns (var/IIFE)</td>
+              <td>Interactive portfolio features: show/hide sections, client-side validation</td>
+              <td>
+                <a href="https://javascript.info/" target="_blank" rel="noopener noreferrer">JavaScript.info</a><br>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">MDN — JavaScript</a>
+              </td>
+              <td>Build interactive pages with vanilla JS</td>
+            </tr>
+
+            <!-- Month 6 -->
+            <tr>
+              <td>6</td>
+              <td>Objects, arrays, array methods (map/filter/reduce); Promises basics</td>
+              <td>Fetch API, JSON handling, localStorage</td>
+              <td>Generators & iterators (know they exist)</td>
+              <td>TODO app (CRUD) using localStorage</td>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" target="_blank" rel="noopener noreferrer">MDN — Fetch API</a><br>
+                <a href="https://javascript.info/async" target="_blank" rel="noopener noreferrer">JavaScript.info — Async</a>
+              </td>
+              <td>Comfortable with array ops & basic async</td>
+            </tr>
+
+            <!-- Month 7 -->
+            <tr>
+              <td>7</td>
+              <td>Git fundamentals: init, add, commit, branch, merge</td>
+              <td>GitHub: clone, fork, pull requests, resolving conflicts</td>
+              <td>Git hooks & CI (awareness)</td>
+              <td>Put your portfolio into a repo; create branches & open PRs</td>
+              <td>
+                <a href="https://git-scm.com/docs" target="_blank" rel="noopener noreferrer">Git Docs</a><br>
+                <a href="https://docs.github.com/en/get-started/quickstart" target="_blank" rel="noopener noreferrer">GitHub Guides</a>
+              </td>
+              <td>Use Git & GitHub professionally</td>
+            </tr>
+
+            <!-- Month 8 -->
+            <tr>
+              <td>8</td>
+              <td>this, prototypes, prototype chain, classes</td>
+              <td>Functional basics: higher-order functions</td>
+              <td>Memory leaks & closure pitfalls (aware)</td>
+              <td>Refactor TODO app into modular code</td>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Inheritance_and_the_prototype_chain" target="_blank" rel="noopener noreferrer">MDN — Prototypes</a>
+              </td>
+              <td>Understand prototype chain & runtime behaviour</td>
+            </tr>
+
+            <!-- Month 9 -->
+            <tr>
+              <td>9</td>
+              <td>async/await, Promise combinators (all, race), ES modules</td>
+              <td>Debounce/throttle, AbortController basics</td>
+              <td>Web Workers (aware)</td>
+              <td>Search with debounced input & API fetching</td>
+              <td>
+                <a href="https://javascript.info/async" target="_blank" rel="noopener noreferrer">JavaScript.info — Async</a><br>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/AbortController" target="_blank" rel="noopener noreferrer">MDN — AbortController</a>
+              </td>
+              <td>Handle advanced async patterns</td>
+            </tr>
+
+            <!-- Month 10 -->
+            <tr>
+              <td>10</td>
+              <td>npm, package.json scripts, basic bundling concepts</td>
+              <td>Vite/webpack intro, dev vs prod builds</td>
+              <td>esbuild/rollup differences (aware)</td>
+              <td>Setup small project with Vite and deploy static build</td>
+              <td>
+                <a href="https://docs.npmjs.com/" target="_blank" rel="noopener noreferrer">npm Docs</a><br>
+                <a href="https://vitejs.dev/" target="_blank" rel="noopener noreferrer">Vite</a>
+              </td>
+              <td>Understand build pipelines & dependency management</td>
+            </tr>
+
+            <!-- Month 11 -->
+            <tr>
+              <td>11</td>
+              <td>Testing basics: unit tests with Jest</td>
+              <td>DOM testing with Testing Library</td>
+              <td>E2E testing overview (Cypress/Playwright)</td>
+              <td>Add unit tests and a DOM test to TODO app</td>
+              <td>
+                <a href="https://jestjs.io/" target="_blank" rel="noopener noreferrer">Jest</a><br>
+                <a href="https://testing-library.com/" target="_blank" rel="noopener noreferrer">Testing Library</a>
+              </td>
+              <td>Write tests that help during refactors</td>
+            </tr>
+
+            <!-- Month 12 -->
+            <tr>
+              <td>12</td>
+              <td>CSS architecture: BEM, component CSS, responsive systems</td>
+              <td>Critical CSS & containment for perf</td>
+              <td>Tailwind utility-first approach (aware)</td>
+              <td>Refactor portfolio CSS using component structure</td>
+              <td>
+                <a href="https://css-tricks.com/bem-101/" target="_blank" rel="noopener noreferrer">CSS-Tricks — BEM</a><br>
+                <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">Tailwind CSS (optional)</a>
+              </td>
+              <td>Create maintainable CSS for medium projects</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Phase 2 -->
+    <section id="phase-2" class="phase reveal">
+      <h2>Phase 2 — Advanced JavaScript &amp; React (Months 13–24)</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Month</th>
+              <th>Master</th>
+              <th>Learn</th>
+              <th>Aware</th>
+              <th>Project</th>
+              <th>Resources</th>
+              <th>Milestone</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Month 13 -->
+            <tr>
+              <td>13</td>
+              <td>React core: components, props, state, JSX</td>
+              <td>Create React App / Vite React templates, functional components</td>
+              <td>Class components (legacy)</td>
+              <td>Rebuild portfolio as React app (static pages)</td>
+              <td>
+                <a href="https://reactjs.org/docs/getting-started.html" target="_blank" rel="noopener noreferrer">React — Official Docs</a><br>
+                <a href="https://vitejs.dev/guide/#scaffolding-your-first-vite-project" target="_blank" rel="noopener noreferrer">Vite + React</a>
+              </td>
+              <td>Build component-based UI with React</td>
+            </tr>
+
+            <!-- Month 14 -->
+            <tr>
+              <td>14</td>
+              <td>Hooks: useState, useEffect, useRef; rules of hooks</td>
+              <td>Custom hooks & composition</td>
+              <td>useLayoutEffect vs useEffect (aware)</td>
+              <td>Weather/search app using public API & hooks</td>
+              <td>
+                <a href="https://reactjs.org/docs/hooks-intro.html" target="_blank" rel="noopener noreferrer">React Hooks</a>
+              </td>
+              <td>Manage side-effects & local state with hooks</td>
+            </tr>
+
+            <!-- Month 15 -->
+            <tr>
+              <td>15</td>
+              <td>React Router: routes, Link, nested routes</td>
+              <td>Route guards & route params</td>
+              <td>Server-side rendering implications (aware)</td>
+              <td>Add routing to React portfolio (Home, Projects, About)</td>
+              <td>
+                <a href="https://reactrouter.com/" target="_blank" rel="noopener noreferrer">React Router</a>
+              </td>
+              <td>Build multi-page client-side routed apps</td>
+            </tr>
+
+            <!-- Month 16 -->
+            <tr>
+              <td>16</td>
+              <td>State patterns: lifting state, Context API, useReducer</td>
+              <td>Intro to Redux/Zustand/Recoil (choose one)</td>
+              <td>Large app state complexity (aware)</td>
+              <td>Notes or small e-commerce catalog using Context + useReducer</td>
+              <td>
+                <a href="https://redux.js.org/" target="_blank" rel="noopener noreferrer">Redux (learn basics)</a><br>
+                <a href="https://github.com/pmndrs/zustand" target="_blank" rel="noopener noreferrer">Zustand</a>
+              </td>
+              <td>Manage app-wide state cleanly</td>
+            </tr>
+
+            <!-- Month 17 -->
+            <tr>
+              <td>17</td>
+              <td>Styling React: CSS Modules, styled-components</td>
+              <td>Tailwind integration, theming</td>
+              <td>CSS-in-JS perf & bundle-size (aware)</td>
+              <td>Restyle React app with CSS Modules or Tailwind</td>
+              <td>
+                <a href="https://styled-components.com/" target="_blank" rel="noopener noreferrer">styled-components</a><br>
+                <a href="https://tailwindcss.com/docs/guides/create-react-app" target="_blank" rel="noopener noreferrer">Tailwind + React</a>
+              </td>
+              <td>Theming & scoped component styles</td>
+            </tr>
+
+            <!-- Month 18 -->
+            <tr>
+              <td>18</td>
+              <td>Performance: memo, useMemo, useCallback, code-splitting</td>
+              <td>Image optimization & lazy-loading</td>
+              <td>Profiling React apps (aware)</td>
+              <td>Improve React project performance (lazy load routes)</td>
+              <td>
+                <a href="https://reactjs.org/docs/optimizing-performance.html" target="_blank" rel="noopener noreferrer">React — Performance</a>
+              </td>
+              <td>Profile & fix bottlenecks</td>
+            </tr>
+
+            <!-- Month 19 -->
+            <tr>
+              <td>19</td>
+              <td>Node.js & Express basics: routing, middleware, request/response</td>
+              <td>REST APIs, error handling, environment variables</td>
+              <td>Streams & clustering basics (aware)</td>
+              <td>REST API for notes/todo app (GET/POST/PUT/DELETE)</td>
+              <td>
+                <a href="https://nodejs.org/en/docs/" target="_blank" rel="noopener noreferrer">Node.js Docs</a><br>
+                <a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer">Express Docs</a>
+              </td>
+              <td>Deploy & test API endpoints locally</td>
+            </tr>
+
+            <!-- Month 20 -->
+            <tr>
+              <td>20</td>
+              <td>MongoDB CRUD & Mongoose schemas, validation</td>
+              <td>Indexing basics, simple aggregation</td>
+              <td>Transactions & replication (aware)</td>
+              <td>Persist TODO/notes in MongoDB (Atlas or local)</td>
+              <td>
+                <a href="https://www.mongodb.com/docs/" target="_blank" rel="noopener noreferrer">MongoDB Docs</a><br>
+                <a href="https://mongoosejs.com/docs/guide.html" target="_blank" rel="noopener noreferrer">Mongoose Guide</a>
+              </td>
+              <td>Securely connect Express to MongoDB</td>
+            </tr>
+
+            <!-- Month 21 -->
+            <tr>
+              <td>21</td>
+              <td>Authentication basics: JWT, bcrypt password hashing</td>
+              <td>Sessions vs tokens, refresh token concept</td>
+              <td>OAuth basics (Google sign-in)</td>
+              <td>Register/login/logout with protected routes</td>
+              <td>
+                <a href="https://jwt.io/" target="_blank" rel="noopener noreferrer">JWT Intro</a><br>
+                <a href="https://www.npmjs.com/package/bcrypt" target="_blank" rel="noopener noreferrer">bcrypt (npm)</a>
+              </td>
+              <td>Build secure auth flows</td>
+            </tr>
+
+            <!-- Month 22 -->
+            <tr>
+              <td>22</td>
+              <td>CORS, secure token storage tradeoffs (httpOnly cookies vs localStorage)</td>
+              <td>File uploads, client & server validation</td>
+              <td>GraphQL basics (aware)</td>
+              <td>Connect React frontend to Express API; fetch user-specific data</td>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS" target="_blank" rel="noopener noreferrer">MDN — CORS</a>
+              </td>
+              <td>End-to-end auth & data flow working</td>
+            </tr>
+
+            <!-- Month 23 -->
+            <tr>
+              <td>23</td>
+              <td>API security: Helmet, rate-limiting, input sanitization</td>
+              <td>Logging basics</td>
+              <td>OWASP Top 10 (aware)</td>
+              <td>Harden API and deploy staging instance</td>
+              <td>
+                <a href="https://helmetjs.github.io/" target="_blank" rel="noopener noreferrer">helmet</a><br>
+                <a href="https://express-rate-limit.github.io/" target="_blank" rel="noopener noreferrer">express-rate-limit</a>
+              </td>
+              <td>Mitigate common web security risks</td>
+            </tr>
+
+            <!-- Month 24 -->
+            <tr>
+              <td>24</td>
+              <td>Testing & CI: Supertest, Jest integration tests</td>
+              <td>GitHub Actions basics — run tests on push</td>
+              <td>CD concepts (aware)</td>
+              <td>Add CI to run tests on PRs and auto-deploy staging</td>
+              <td>
+                <a href="https://github.com/actions" target="_blank" rel="noopener noreferrer">GitHub Actions</a><br>
+                <a href="https://www.npmjs.com/package/supertest" target="_blank" rel="noopener noreferrer">Supertest</a>
+              </td>
+              <td>Use CI for automated testing & deployments</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Phase 3 -->
+    <section id="phase-3" class="phase reveal">
+      <h2>Phase 3 — Backend &amp; MERN Stack (Months 25–33)</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Month</th>
+              <th>Master</th>
+              <th>Learn</th>
+              <th>Aware</th>
+              <th>Project</th>
+              <th>Resources</th>
+              <th>Milestone</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <!-- Month 25 -->
+            <tr>
+              <td>25</td>
+              <td>End-to-end MERN flow: React frontend + Express + Mongo + Auth</td>
+              <td>Deployment basics: Render/Heroku/Vercel + Mongo Atlas</td>
+              <td>Serverless pros/cons (aware)</td>
+              <td>Task-manager full-stack app with user accounts; deploy publicly</td>
+              <td>
+                <a href="https://render.com/docs" target="_blank" rel="noopener noreferrer">Render Docs</a><br>
+                <a href="https://www.heroku.com/" target="_blank" rel="noopener noreferrer">Heroku</a>
+              </td>
+              <td>Ship a public full-stack app</td>
+            </tr>
+
+            <!-- Month 26 -->
+            <tr>
+              <td>26</td>
+              <td>Pagination & query optimization patterns</td>
+              <td>File storage strategies (S3 basics), background jobs (bull)</td>
+              <td>Microservices introduction (aware)</td>
+              <td>Extend MERN app with pagination & file uploads (or mock S3)</td>
+              <td>
+                <a href="https://aws.amazon.com/s3/" target="_blank" rel="noopener noreferrer">AWS S3</a><br>
+                <a href="https://github.com/OptimalBits/bull" target="_blank" rel="noopener noreferrer">bull (jobs)</a>
+              </td>
+              <td>Production-ready backend features</td>
+            </tr>
+
+            <!-- Month 27 -->
+            <tr>
+              <td>27</td>
+              <td>Socket.IO & real-time basics</td>
+              <td>When to use websockets vs polling</td>
+              <td>Scaling websockets & pub/sub (aware)</td>
+              <td>Add realtime chat or notifications to your app</td>
+              <td>
+                <a href="https://socket.io/docs/" target="_blank" rel="noopener noreferrer">Socket.IO</a>
+              </td>
+              <td>Small real-time feature with fallback strategies</td>
+            </tr>
+
+            <!-- Month 28 -->
+            <tr>
+              <td>28</td>
+              <td>Indexes, Mongo full-text search basics</td>
+              <td>When to integrate Elasticsearch</td>
+              <td>Sharding & replication (aware)</td>
+              <td>Add search & scoring with Mongo text indexes</td>
+              <td>
+                <a href="https://www.mongodb.com/docs/manual/indexes/" target="_blank" rel="noopener noreferrer">Mongo Indexes</a>
+              </td>
+              <td>Search & paginated results</td>
+            </tr>
+
+            <!-- Month 29 -->
+            <tr>
+              <td>29</td>
+              <td>Logging (winston/pino), monitoring basics (Sentry)</td>
+              <td>Health checks & alerts</td>
+              <td>Load balancing & CDN (aware)</td>
+              <td>Add logging & error monitoring; configure alerts</td>
+              <td>
+                <a href="https://sentry.io/welcome/" target="_blank" rel="noopener noreferrer">Sentry</a><br>
+                <a href="https://github.com/winstonjs/winston" target="_blank" rel="noopener noreferrer">Winston</a>
+              </td>
+              <td>Monitor & fix production issues</td>
+            </tr>
+
+            <!-- Month 30 -->
+            <tr>
+              <td>30</td>
+              <td>Caching strategies (Redis basics)</td>
+              <td>Front-end performance & Lighthouse audits</td>
+              <td>Cost trade-offs in infra (aware)</td>
+              <td>Add Redis cache for frequently-requested data</td>
+              <td>
+                <a href="https://redis.io/docs/" target="_blank" rel="noopener noreferrer">Redis Docs</a><br>
+                <a href="https://developers.google.com/web/tools/lighthouse" target="_blank" rel="noopener noreferrer">Lighthouse</a>
+              </td>
+              <td>Speed improvements & cost reductions</td>
+            </tr>
+
+            <!-- Month 31 -->
+            <tr>
+              <td>31</td>
+              <td>TypeScript basics: types, interfaces, generics</td>
+              <td>Typing React props & hooks; TS in Node</td>
+              <td>Advanced utility types (aware)</td>
+              <td>Migrate a small part of codebase to TypeScript</td>
+              <td>
+                <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">TypeScript</a>
+              </td>
+              <td>Reduce runtime errors via static typing</td>
+            </tr>
+
+            <!-- Month 32 -->
+            <tr>
+              <td>32</td>
+              <td>Component & folder architecture (atomic design)</td>
+              <td>API versioning basics</td>
+              <td>CQRS/event sourcing (aware)</td>
+              <td>Refactor project structure & create a small component library</td>
+              <td>
+                <a href="https://atomicdesign.bradfrost.com/" target="_blank" rel="noopener noreferrer">Atomic Design</a>
+              </td>
+              <td>Readable & maintainable codebase</td>
+            </tr>
+
+            <!-- Month 33 -->
+            <tr>
+              <td>33</td>
+              <td>Integration & E2E testing at scale (Playwright/Cypress)</td>
+              <td>Contract testing basics</td>
+              <td>Flaky test mitigation (aware)</td>
+              <td>Add E2E tests for critical flows</td>
+              <td>
+                <a href="https://playwright.dev/" target="_blank" rel="noopener noreferrer">Playwright</a><br>
+                <a href="https://www.cypress.io/" target="_blank" rel="noopener noreferrer">Cypress</a>
+              </td>
+              <td>Confidence in release flows</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Phase 4 -->
+    <section id="phase-4" class="phase reveal">
+      <h2>Phase 4 — React Native & Final Projects (Months 34–42)</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Month</th>
+              <th>Master</th>
+              <th>Learn</th>
+              <th>Aware</th>
+              <th>Project</th>
+              <th>Resources</th>
+              <th>Milestone</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <!-- Month 34 -->
+            <tr>
+              <td>34</td>
+              <td>React Native basics: Expo vs CLI, core components (View, Text, Image)</td>
+              <td>Styling in RN (StyleSheet), navigation basics</td>
+              <td>Native modules & bridging (aware)</td>
+              <td>Simple mobile notes list using Expo</td>
+              <td>
+                <a href="https://docs.expo.dev/" target="_blank" rel="noopener noreferrer">Expo Docs</a><br>
+                <a href="https://reactnative.dev/docs/getting-started" target="_blank" rel="noopener noreferrer">React Native Docs</a>
+              </td>
+              <td>Ship a basic native app and test on device</td>
+            </tr>
+
+            <!-- Month 35 -->
+            <tr>
+              <td>35</td>
+              <td>Navigation patterns: stacks, tabs, drawers (React Navigation)</td>
+              <td>State management in RN (Context/Zustand)</td>
+              <td>Native performance considerations (aware)</td>
+              <td>Multi-screen app with auth flow & AsyncStorage</td>
+              <td>
+                <a href="https://reactnavigation.org/" target="_blank" rel="noopener noreferrer">React Navigation</a>
+              </td>
+              <td>Multi-screen native app with persistent storage</td>
+            </tr>
+
+            <!-- Month 36 -->
+            <tr>
+              <td>36</td>
+              <td>Networking in RN: fetch/Axios; secure token handling</td>
+              <td>Offline-first basics & sync strategies</td>
+              <td>Push notifications (aware)</td>
+              <td>Connect mobile app to MERN API for auth & data</td>
+              <td>
+                <a href="https://axios-http.com/" target="_blank" rel="noopener noreferrer">Axios</a>
+              </td>
+              <td>Mobile + backend integration with secure auth</td>
+            </tr>
+
+            <!-- Month 37 -->
+            <tr>
+              <td>37</td>
+              <td>Performance: FlatList virtualization, optimizing re-renders</td>
+              <td>Device APIs: camera, geolocation via Expo</td>
+              <td>App size & build configuration trade-offs</td>
+              <td>Add photo upload or geolocation feature & sync to backend</td>
+              <td>
+                <a href="https://docs.expo.dev/versions/latest/sdk/camera/" target="_blank" rel="noopener noreferrer">Expo Camera</a>
+              </td>
+              <td>Use device capabilities reliably</td>
+            </tr>
+
+            <!-- Month 38 -->
+            <tr>
+              <td>38</td>
+              <td>App signing, store metadata & release process</td>
+              <td>EAS or Fastlane basics</td>
+              <td>App review guidelines & timelines (aware)</td>
+              <td>Prepare a signed build and store assets draft</td>
+              <td>
+                <a href="https://docs.expo.dev/eas/" target="_blank" rel="noopener noreferrer">EAS (Expo Application Services)</a>
+              </td>
+              <td>Signed builds ready for submission</td>
+            </tr>
+
+            <!-- Month 39 -->
+            <tr>
+              <td>39</td>
+              <td>Portfolio polish, resume, interview prep</td>
+              <td>System design for web (high-level)</td>
+              <td>Freelance/client workflows (aware)</td>
+              <td>Finalize 2–3 showcase projects: 1 MERN web app, 1 RN app, portfolio</td>
+              <td>
+                <a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer">LeetCode</a><br>
+                <a href="https://frontendmentor.io/" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>
+              </td>
+              <td>Ready to apply for mid-level roles or freelance</td>
+            </tr>
+
+            <!-- Month 40 -->
+            <tr>
+              <td>40</td>
+              <td>Polish & bug squash; prepare case studies</td>
+              <td>Deployment final checks, performance audits</td>
+              <td>Legal & contract basics (freelance aware)</td>
+              <td>Publish projects, write case studies & architecture notes</td>
+              <td>
+                <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a><br>
+                <a href="https://vercel.com/docs" target="_blank" rel="noopener noreferrer">Vercel Docs</a>
+              </td>
+              <td>Live demos + documented repo & README</td>
+            </tr>
+
+            <!-- Month 41 -->
+            <tr>
+              <td>41</td>
+              <td>Interview practice (behavioral & technical)</td>
+              <td>Coding challenge strategy (time-boxing)</td>
+              <td>Negotiation basics (aware)</td>
+              <td>Mock interviews, timed coding problems, system design prep</td>
+              <td>
+                <a href="https://interviewing.io/" target="_blank" rel="noopener noreferrer">Interviewing.io</a><br>
+                <a href="https://www.pramp.com/" target="_blank" rel="noopener noreferrer">Pramp</a>
+              </td>
+              <td>Confident in interviews & coding tasks</td>
+            </tr>
+
+            <!-- Month 42 -->
+            <tr>
+              <td>42</td>
+              <td>Final polish: portfolio & 2–3 showcase apps</td>
+              <td>Application process & follow-ups</td>
+              <td>Roadmap for continued learning (ML/advanced topics)</td>
+              <td>Deploy final builds, publish app store drafts (if desired)</td>
+              <td>
+                <a href="https://www.canva.com/" target="_blank" rel="noopener noreferrer">Canva (assets)</a>
+              </td>
+              <td>Prepared to start career or client work with strong portfolio</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Notes -->
+    <section id="notes" class="notes reveal">
+      <h2>Notes & Quick Links</h2>
+      <ul>
+        <li>Follow months sequentially but adapt to your pace — extend months when needed.</li>
+        <li>Core repeating resources: 
+          <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">MDN</a>, 
+          <a href="https://javascript.info/" target="_blank" rel="noopener noreferrer">JavaScript.info</a>, 
+          <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">freeCodeCamp</a>, 
+          <a href="https://css-tricks.com/" target="_blank" rel="noopener noreferrer">CSS-Tricks</a>.
+        </li>
+        <li>Keep README & case study for every project: problem, architecture, tradeoffs, what you learned.</li>
+        <li>Deploy early: GitHub Pages, Vercel, Netlify for web; Render/Heroku for backend; Expo for mobile.</li>
+      </ul>
+
+      <p class="quick-links">
+        <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a> ·
+        <a href="https://javascript.info/" target="_blank" rel="noopener noreferrer">JavaScript.info</a> ·
+        <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">freeCodeCamp</a> ·
+        <a href="https://css-tricks.com/" target="_blank" rel="noopener noreferrer">CSS-Tricks</a> ·
+        <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React</a> ·
+        <a href="https://reactnative.dev/" target="_blank" rel="noopener noreferrer">React Native</a> ·
+        <a href="https://docs.expo.dev/" target="_blank" rel="noopener noreferrer">Expo</a> ·
+        <a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer">Express</a> ·
+        <a href="https://www.mongodb.com/docs/" target="_blank" rel="noopener noreferrer">MongoDB</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Copy the three files into a repo and deploy. Want a one-file inline CSS version or a printable PDF? Ask and I'll generate it.</p>
+    <p>Good luck — build, iterate, ship 🚀</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

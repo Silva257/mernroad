@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MERN + React Native 3yr6mo Roadmap — Timeline</title>
+  <link rel="stylesheet" href="roadmap.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>MERN &amp; React Native Roadmap — 3 Years 6 Months</h1>
+    <p class="lead">42 months, 3–4 hours daily. Timeline style: month-by-month progression, projects, resources, and milestones.</p>
+    <nav>
+      <a href="#timeline">Timeline</a> ·
+      <a href="#tables">Quick Reference Tables</a> ·
+      <a href="#resources">Core Resources</a> ·
+      <a href="#notes">Notes</a>
+    </nav>
+  </header>
+
+  <main id="timeline" class="timeline">
+    <!-- Intro block -->
+    <section class="card intro">
+      <h2>How to use this roadmap</h2>
+      <ul>
+        <li>Follow each month sequentially; build the mini project(s) listed.</li>
+        <li>Label concepts as <strong>Master</strong> (deep), <em>Learn</em> (practical), <u>Aware</u> (know it exists).</li>
+        <li>Spend 3–4 hours daily: mix guided learning, practice, and project work.</li>
+        <li>Use the tables section for quick command &amp; deployment reminders.</li>
+      </ul>
+    </section>
+
+    <!-- Months 1 - 6 -->
+    <section class="card month" id="m1">
+      <h3>Month 1 — HTML Fundamentals (Master & Learn)</h3>
+      <p><strong>Master:</strong> Semantic HTML, document structure (&lt;header&gt;, &lt;main&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;footer&gt;), forms basics, accessibility basics (aria, alt, headings).</p>
+      <p><strong>Learn:</strong> HTML5 APIs overview (localStorage, history API basics), meta tags, favicons.</p>
+      <p><strong>Aware:</strong> Web Components (basic idea).</p>
+      <p><strong>Project:</strong> Simple personal portfolio HTML skeleton + contact form (no backend yet).</p>
+      <p><strong>Milestone:</strong> Comfortable writing accessible, semantic HTML pages and structuring content.</p>
+      <p class="small">Resources: MDN HTML guide, freeCodeCamp Responsive Web Design (HTML).</p>
+    </section>
+
+    <section class="card month" id="m2">
+      <h3>Month 2 — CSS Fundamentals (Master)</h3>
+      <p><strong>Master:</strong> Box model, selectors, specificity, layout basics (display, position, float), typography (font stacks, rem/em), colors, responsive media queries.</p>
+      <p><strong>Learn:</strong> Flexbox basics &amp; common patterns, CSS variables (custom properties).</p>
+      <p><strong>Aware:</strong> Preprocessors (Sass) — know when to use.</p>
+      <p><strong>Project:</strong> Style portfolio home page; create responsive nav and hero using Flexbox.</p>
+      <p><strong>Milestone:</strong> Produce responsive, well-structured layouts using CSS and Flexbox.</p>
+      <p class="small">Resources: MDN CSS, CSS-Tricks guides, Flexbox Froggy.</p>
+    </section>
+
+    <section class="card month" id="m3">
+      <h3>Month 3 — CSS Grid & Advanced Layout (Master)</h3>
+      <p><strong>Master:</strong> CSS Grid (tracks, areas, responsive grids), combining Grid + Flexbox for page layouts.</p>
+      <p><strong>Learn:</strong> Modern responsive patterns, container queries (if available), utility classes.</p>
+      <p><strong>Aware:</strong> CSS-in-JS tradeoffs (styled-components, emotion).</p>
+      <p><strong>Project:</strong> Build a multi-section portfolio layout (Grid-based project gallery).</p>
+      <p><strong>Milestone:</strong> Confident in Grid for major layouts and combining with Flexbox.</p>
+      <p class="small">Resources: CSS Grid by MDN, Grid Garden, CSS-Tricks Grid guide.</p>
+    </section>
+
+    <section class="card month" id="m4">
+      <h3>Month 4 — CSS Animations & Interactions (Master)</h3>
+      <p><strong>Master:</strong> CSS transitions, keyframe animations, using transform &amp; opacity for performant animations, prefers-reduced-motion.</p>
+      <p><strong>Learn:</strong> Micro-interactions (hover/focus effects, animated buttons, animated modals), CSS variables for animation control.</p>
+      <p><strong>Aware:</strong> When to use JS animations vs CSS animations.</p>
+      <p><strong>Project:</strong> Add polished animations to portfolio (nav transitions, hero entrance, gallery hover effects).</p>
+      <p class="small">Resources: MDN animation docs, CSS-Tricks animation guides.</p>
+    </section>
+
+    <section class="card month" id="m5">
+      <h3>Month 5 — JavaScript Fundamentals I (Master)</h3>
+      <p><strong>Master:</strong> Language basics: variables (let/const), types, operators, control flow, functions (declaration, expression, arrow functions), scope &amp; closures basics.</p>
+      <p><strong>Learn:</strong> DOM basics: querySelector, event listeners, simple DOM updates, forms handling.</p>
+      <p><strong>Aware:</strong> Older patterns (var, IIFEs) for historical context.</p>
+      <p><strong>Project:</strong> Add interactive features to portfolio: show/hide sections, form validation (client-side), smooth scrolling.</p>
+      <p><strong>Milestone:</strong> Build interactive pages with vanilla JS and manipulate DOM confidently.</p>
+      <p class="small">Resources: MDN JS guide, JavaScript.info (Basics).</p>
+    </section>
+
+    <section class="card month" id="m6">
+      <h3>Month 6 — JavaScript Fundamentals II (Master)</h3>
+      <p><strong>Master:</strong> Objects, arrays &amp; array methods (map, filter, reduce), asynchronous JS basics (callbacks, Promises), fetch API.</p>
+      <p><strong>Learn:</strong> Error handling (try/catch), JSON handling, localStorage usage.</p>
+      <p><strong>Aware:</strong> Generator functions &amp; iterators (know they exist).</p>
+      <p><strong>Project:</strong> Build a small SPA-like TODO app (CRUD in localStorage) with vanilla JS.</p>
+      <p><strong>Milestone:</strong> Comfortable with array operations and basic async patterns.</p>
+      <p class="small">Resources: JavaScript.info (async/tutorial), MDN Promises.</p>
+    </section>
+
+    <!-- Months 7 - 12 -->
+    <section class="card month" id="m7">
+      <h3>Month 7 — Version Control & Git (Master)</h3>
+      <p><strong>Master:</strong> Local Git workflow: init, add, commit, branch, merge, rebase basics, stash.</p>
+      <p><strong>Learn:</strong> GitHub: push, pull, fork, clone, pull requests, resolving merge conflicts, basic PR review flow.</p>
+      <p><strong>Aware:</strong> Git hooks &amp; CI integration (know they exist).</p>
+      <p><strong>Project:</strong> Put your portfolio into a repo; create branches for features; open a PR and merge.</p>
+      <p><strong>Milestone:</strong> Use Git and GitHub professionally: branching, PRs, resolving conflicts.</p>
+      <p class="small">Quick commands table below in <a href="#tables">Tables</a>.</p>
+    </section>
+
+    <section class="card month" id="m8">
+      <h3>Month 8 — JavaScript Deep Dive I (Master)</h3>
+      <p><strong>Master:</strong> this keyword, prototypes, prototype chain, OOP in JS (classes), hoisting, event loop and microtask queue.</p>
+      <p><strong>Learn:</strong> Functional programming basics (pure functions, higher-order functions).</p>
+      <p><strong>Aware:</strong> Memory leaks &amp; closure pitfalls.</p>
+      <p><strong>Project:</strong> Upgrade TODO app with modular code; create a small state manager.</p>
+      <p><strong>Milestone:</strong> Understand JS runtime behaviour and architecture-level decisions.</p>
+    </section>
+
+    <section class="card month" id="m9">
+      <h3>Month 9 — JavaScript Deep Dive II (Async & Patterns)</h3>
+      <p><strong>Master:</strong> async/await patterns, Promise combinators (all, race), debouncing/throttling, module patterns (ES modules).</p>
+      <p><strong>Learn:</strong> Error propagation in async code, cancellation patterns (AbortController basics).</p>
+      <p><strong>Aware:</strong> Worker threads &amp; Web Workers for heavy computation.</p>
+      <p><strong>Project:</strong> Fetch data from a public API, implement search with debounced input and loading states.</p>
+      <p><strong>Milestone:</strong> Build responsive networked features and handle async edge cases.</p>
+    </section>
+
+    <section class="card month" id="m10">
+      <h3>Month 10 — Tooling: Package Managers & Build Tools (Learn)</h3>
+      <p><strong>Learn:</strong> npm/yarn basics (init, install, scripts), bundlers (bundling concepts), introduction to Webpack / Vite (what they do).</p>
+      <p><strong>Aware:</strong> Rollup / Parcel / esbuild differences.</p>
+      <p><strong>Project:</strong> Set up a small project with npm scripts and Vite dev server; deploy a build to GitHub Pages.</p>
+      <p><strong>Milestone:</strong> Understand build pipelines and manage dependencies safely.</p>
+    </section>
+
+    <section class="card month" id="m11">
+      <h3>Month 11 — Testing Fundamentals (Learn)</h3>
+      <p><strong>Learn:</strong> Unit testing basics with Jest, DOM testing with Testing Library, basics of end-to-end testing (Playwright or Cypress overview).</p>
+      <p><strong>Aware:</strong> Test coverage and CI integration.</p>
+      <p><strong>Project:</strong> Add unit tests for your TODO app functions and a simple DOM test.</p>
+      <p><strong>Milestone:</strong> Write basic tests that give you confidence when refactoring.</p>
+    </section>
+
+    <section class="card month" id="m12">
+      <h3>Month 12 — CSS Architecture & Responsive Design (Master)</h3>
+      <p><strong>Master:</strong> BEM methodology, component-based CSS, responsive design systems, utility-first basics (Tailwind awareness).</p>
+      <p><strong>Learn:</strong> Critical CSS, minimization for performance, CSS containment.</p>
+      <p><strong>Project:</strong> Re-style portfolio using a component organization and responsive breakpoints; optionally try Tailwind basics.</p>
+      <p><strong>Milestone:</strong> Build well-structured, maintainable CSS for medium-size projects.</p>
+    </section>
+
+    <!-- Months 13 - 18 -->
+    <section class="card month" id="m13">
+      <h3>Month 13 — React Fundamentals I (Master)</h3>
+      <p><strong>Master:</strong> React core: components, props, state, JSX, rendering flow.</p>
+      <p><strong>Learn:</strong> Create React App / Vite React templates, functional components.</p>
+      <p><strong>Aware:</strong> Class components (know them for legacy code).</p>
+      <p><strong>Project:</strong> Rebuild your portfolio shell as a React app (static content, routing later).</p>
+      <p><strong>Milestone:</strong> Build component-based UI, understand state & props flow.</p>
+    </section>
+
+    <section class="card month" id="m14">
+      <h3>Month 14 — React Fundamentals II (Hooks)</h3>
+      <p><strong>Master:</strong> useState, useEffect, useRef, rules of hooks, component lifecycle with hooks.</p>
+      <p><strong>Learn:</strong> custom hooks, composing hooks for reusability.</p>
+      <p><strong>Aware:</strong> useLayoutEffect vs useEffect differences.</p>
+      <p><strong>Project:</strong> Build a small data-driven app (e.g., weather search) using public API and hooks.</p>
+      <p><strong>Milestone:</strong> Use hooks to manage side-effects and local component state elegantly.</p>
+    </section>
+
+    <section class="card month" id="m15">
+      <h3>Month 15 — React Router & Client Routing (Learn)</h3>
+      <p><strong>Learn:</strong> React Router basics: routes, Link, nested routes, route params, guarded routes.</p>
+      <p><strong>Aware:</strong> History API & server-side rendering implications.</p>
+      <p><strong>Project:</strong> Add routing to your React portfolio (Home, About, Projects, Contact), protect a sample route.</p>
+      <p><strong>Milestone:</strong> Build multi-page experiences with client routing.</p>
+    </section>
+
+    <section class="card month" id="m16">
+      <h3>Month 16 — State Management Patterns (Master)</h3>
+      <p><strong>Master:</strong> Lifting state up, context API for global state, useReducer for predictable state updates.</p>
+      <p><strong>Learn:</strong> Introduction to Redux / Zustand / Recoil (when to choose each).</p>
+      <p><strong>Aware:</strong> Complex state patterns in large apps.</p>
+      <p><strong>Project:</strong> Build a medium app (notes app or small e-commerce catalog) using Context + useReducer or Zustand.</p>
+      <p><strong>Milestone:</strong> Manage app-wide state cleanly; understand trade-offs of each approach.</p>
+    </section>
+
+    <section class="card month" id="m17">
+      <h3>Month 17 — Styling React Components (Learn)</h3>
+      <p><strong>Learn:</strong> CSS Modules, styled-components, Tailwind integration, theme switching.</p>
+      <p><strong>Aware:</strong> Performance & bundle-size implications of CSS-in-JS.</p>
+      <p><strong>Project:</strong> Restyle your React app using a component styling system (e.g., CSS Modules or Tailwind).</p>
+      <p><strong>Milestone:</strong> Implement theming and scoped styles in React components.</p>
+    </section>
+
+    <section class="card month" id="m18">
+      <h3>Month 18 — React Performance & Best Practices (Learn)</h3>
+      <p><strong>Learn:</strong> Performance optimization: memo, useMemo, useCallback, code-splitting, lazy loading, image optimization.</p>
+      <p><strong>Aware:</strong> Profiling React apps and diagnosing performance issues.</p>
+      <p><strong>Project:</strong> Improve a React project's performance by lazy-loading routes and optimizing re-renders.</p>
+      <p><strong>Milestone:</strong> Build fast, responsive React UIs and profile for bottlenecks.</p>
+    </section>
+
+    <!-- Months 19 - 24 (Backend intro) -->
+    <section class="card month" id="m19">
+      <h3>Month 19 — Node.js & Express Basics (Master)</h3>
+      <p><strong>Master:</strong> Node runtime basics, npm scripts, Express routing, middleware, request/response lifecycle.</p>
+      <p><strong>Learn:</strong> Building RESTful APIs, error handling, environment variables (.env).</p>
+      <p><strong>Aware:</strong> Streams & clustering basics for scale.</p>
+      <p><strong>Project:</strong> Build a simple REST API for your notes/todo app (GET, POST, PUT, DELETE).</p>
+      <p><strong>Milestone:</strong> Deploy a working API locally and test endpoints via Postman or curl.</p>
+    </section>
+
+    <section class="card month" id="m20">
+      <h3>Month 20 — MongoDB & Mongoose (Master)</h3>
+      <p><strong>Master:</strong> CRUD with MongoDB, schemas with Mongoose, validation, relationships (refs vs embedding).</p>
+      <p><strong>Learn:</strong> Indexing basics, simple aggregation awareness.</p>
+      <p><strong>Aware:</strong> Transactions and replication (know they exist).</p>
+      <p><strong>Project:</strong> Persist your TODO/notes app data in MongoDB; add creation dates and user references.</p>
+      <p><strong>Milestone:</strong> Use MongoDB Atlas or local MongoDB and connect from Express securely.</p>
+    </section>
+
+    <section class="card month" id="m21">
+      <h3>Month 21 — Authentication & Authorization (Master)</h3>
+      <p><strong>Master:</strong> JWT basics, session-based auth, password hashing (bcrypt), protect routes with middleware.</p>
+      <p><strong>Learn:</strong> OAuth basics (Google sign-in), refresh tokens vs access tokens.</p>
+      <p><strong>Aware:</strong> SSO & advanced identity providers.</p>
+      <p><strong>Project:</strong> Add authentication to your app: register/login/logout and protected routes for user-specific data.</p>
+      <p><strong>Milestone:</strong> Build secure auth flows and understand token lifecycle.</p>
+    </section>
+
+    <section class="card month" id="m22">
+      <h3>Month 22 — Connecting Frontend & Backend (Master)</h3>
+      <p><strong>Master:</strong> CORS, REST API consumption, handling auth tokens on frontend, secure storage (httpOnly cookies vs localStorage tradeoffs).</p>
+      <p><strong>Learn:</strong> File uploads, data validation on both client and server.</p>
+      <p><strong>Aware:</strong> GraphQL basic idea (when to prefer).</p>
+      <p><strong>Project:</strong> Make your React app speak to your Express API; show user data fetched from backend.</p>
+      <p><strong>Milestone:</strong> Build full-stack feature end-to-end and debug network & auth flows.</p>
+    </section>
+
+    <section class="card month" id="m23">
+      <h3>Month 23 — APIs, Rate Limiting & Security Hardening (Learn)</h3>
+      <p><strong>Learn:</strong> Helmet, rate limiting, input sanitization, CORS fine-tuning, basic logging.</p>
+      <p><strong>Aware:</strong> OWASP top 10 and secure defaults.</p>
+      <p><strong>Project:</strong> Harden your API and deploy to a staging environment; run simple vulnerability checks.</p>
+      <p><strong>Milestone:</strong> Understand common web security risks and mitigations.</p>
+    </section>
+
+    <section class="card month" id="m24">
+      <h3>Month 24 — Testing & CI for Full Stack (Learn)</h3>
+      <p><strong>Learn:</strong> API testing (Supertest), integration tests, GitHub Actions basics for CI pipelines (run tests on push).</p>
+      <p><strong>Aware:</strong> Full CD pipelines and environment management.</p>
+      <p><strong>Project:</strong> Add CI to your project to run tests on PRs and deploy staging builds automatically.</p>
+      <p><strong>Milestone:</strong> Use CI to ensure quality and faster iteration.</p>
+    </section>
+
+    <!-- Months 25 - 30 (MERN focus) -->
+    <section class="card month" id="m25">
+      <h3>Month 25 — MERN Project I: Small Full-stack App (Master)</h3>
+      <p><strong>Master:</strong> End-to-end flow: React frontend &amp; Express + Mongo backend with authentication.</p>
+      <p><strong>Learn:</strong> Deployment basics for full-stack (Heroku/Render/Vercel + Mongo Atlas).</p>
+      <p><strong>Aware:</strong> Serverless vs traditional server pros/cons.</p>
+      <p><strong>Project:</strong> Build a small full stack app (task-manager with user accounts). Deploy to a public URL.</p>
+      <p><strong>Milestone:</strong> Ship a full-stack app that real users can sign up to and use.</p>
+    </section>
+
+    <section class="card month" id="m26">
+      <h3>Month 26 — Advanced Backend Patterns (Learn)</h3>
+      <p><strong>Learn:</strong> Pagination, query optimization, file storage strategies (S3), background jobs (bull/agenda basics), email sending.</p>
+      <p><strong>Aware:</strong> Microservices introduction (why &amp; when).</p>
+      <p><strong>Project:</strong> Extend your MERN app with pagination and file upload to S3 (or a mock).</p>
+      <p><strong>Milestone:</strong> Backend features for production-readiness.</p>
+    </section>
+
+    <section class="card month" id="m27">
+      <h3>Month 27 — Real-time & WebSockets (Learn)</h3>
+      <p><strong>Learn:</strong> Socket.IO basics (real-time updates), when to use websockets vs polling.</p>
+      <p><strong>Aware:</strong> Scaling websockets & pub/sub fundamentals.</p>
+      <p><strong>Project:</strong> Add real-time notifications or chat to your MERN app.</p>
+      <p><strong>Milestone:</strong> Implement a small real-time feature with robust fallback.</p>
+    </section>
+
+    <section class="card month" id="m28">
+      <h3>Month 28 — Search & Indexing (Learn)</h3>
+      <p><strong>Learn:</strong> Creating indexes in Mongo, basic full-text search, when to integrate Elasticsearch.</p>
+      <p><strong>Aware:</strong> Sharding & replication concepts.</p>
+      <p><strong>Project:</strong> Add search to your project with Mongo text indexes and filters.</p>
+      <p><strong>Milestone:</strong> Users can search content efficiently and results are paginated.</p>
+    </section>
+
+    <section class="card month" id="m29">
+      <h3>Month 29 — Scaling & Monitoring (Learn)</h3>
+      <p><strong>Learn:</strong> Logging (winston/pino), app monitoring basics (Sentry), health checks.</p>
+      <p><strong>Aware:</strong> Load balancing & CDNs.</p>
+      <p><strong>Project:</strong> Add logging & basic error monitoring to your deployed app; configure simple alerts.</p>
+      <p><strong>Milestone:</strong> Monitor your app and fix issues discovered in production.</p>
+    </section>
+
+    <section class="card month" id="m30">
+      <h3>Month 30 — Performance & Cost Optimizations (Learn)</h3>
+      <p><strong>Learn:</strong> Caching strategies (Redis basics), query optimization, front-end performance (Lighthouse).</p>
+      <p><strong>Aware:</strong> Cost trade-offs for hosting & storage.</p>
+      <p><strong>Project:</strong> Add a cache for frequently-requested data and measure speed improvements.</p>
+      <p><strong>Milestone:</strong> Improve user-perceived speed & reduce backend costs where possible.</p>
+    </section>
+
+    <!-- Months 31 - 36 (Advanced front-end & TypeScript) -->
+    <section class="card month" id="m31">
+      <h3>Month 31 — TypeScript for React & Node (Master)</h3>
+      <p><strong>Master:</strong> TypeScript basics, types, interfaces, generics, TS in React (typing props, hooks) and Node (types for Express).</p>
+      <p><strong>Learn:</strong> Migrate a small React component to TS.</p>
+      <p><strong>Aware:</strong> Advanced TS utility types.</p>
+      <p><strong>Project:</strong> Convert a small part of your codebase to TypeScript and deploy a typed build.</p>
+      <p><strong>Milestone:</strong> Confidently apply TS to reduce runtime errors and improve DX.</p>
+    </section>
+
+    <section class="card month" id="m32">
+      <h3>Month 32 — Architectural Patterns (Learn)</h3>
+      <p><strong>Learn:</strong> Component architecture (atomic design), folder structures for scale, API versioning basics.</p>
+      <p><strong>Aware:</strong> CQRS / Event sourcing as advanced topics.</p>
+      <p><strong>Project:</strong> Refactor a project to a clearer folder structure and component library.</p>
+      <p><strong>Milestone:</strong> Codebase is readable and maintainable for teams.</p>
+    </section>
+
+    <section class="card month" id="m33">
+      <h3>Month 33 — Advanced Testing & Contract Testing (Learn)</h3>
+      <p><strong>Learn:</strong> Contract testing (e.g., Pact idea), integration & e2e testing at scale with Playwright/Cypress.</p>
+      <p><strong>Aware:</strong> Test flakiness causes & mitigation.</p>
+      <p><strong>Project:</strong> Add end-to-end tests for critical flows in your MERN app.</p>
+      <p><strong>Milestone:</strong> Confidence that critical flows work across releases.</p>
+    </section>
+
+    <section class="card month" id="m34">
+      <h3>Month 34 — DevOps Basics & Docker (Learn)</h3>
+      <p><strong>Learn:</strong> Docker basics (Dockerfile, docker-compose), containerizing apps, basics of infra as code idea.</p>
+      <p><strong>Aware:</strong> Kubernetes basics (why use it).</p>
+      <p><strong>Project:</strong> Containerize your MERN app and run locally via docker-compose.</p>
+      <p><strong>Milestone:</strong> Deploy reproducible environments using containers.</p>
+    </section>
+
+    <section class="card month" id="m35">
+      <h3>Month 35 — Accessibility & Internationalization (Learn)</h3>
+      <p><strong>Learn:</strong> WCAG basics, semantic roles, keyboard navigation, color contrast, i18n concepts (react-intl or i18next basics).</p>
+      <p><strong>Aware:</strong> Right-to-left (RTL) layout considerations.</p>
+      <p><strong>Project:</strong> Make an app accessible and add a second locale with translations.</p>
+      <p><strong>Milestone:</strong> Build inclusive experiences for broader audiences.</p>
+    </section>
+
+    <section class="card month" id="m36">
+      <h3>Month 36 — UX, Design Systems & Component Libraries (Learn)</h3>
+      <p><strong>Learn:</strong> Design systems basics, storybook for component development, accessible components, tokens & theming.</p>
+      <p><strong>Aware:</strong> Design handoff processes for teams.</p>
+      <p><strong>Project:</strong> Create a small component library with documentation (Storybook) of 10 reusable components.</p>
+      <p><strong>Milestone:</strong> Produce consistent UI components and document them for reuse.</p>
+    </section>
+
+    <!-- Months 37 - 42 (React Native & Mobile) -->
+    <section class="card month" id="m37">
+      <h3>Month 37 — React Native Fundamentals (Master)</h3>
+      <p><strong>Master:</strong> Setup (Expo vs React Native CLI), core components (View, Text, Image, ScrollView), styling in RN (StyleSheet), navigation (React Navigation basics).</p>
+      <p><strong>Learn:</strong> Differences between web and native (layout, event handling), debugging on device/emulator.</p>
+      <p><strong>Aware:</strong> Native modules & bridging concept.</p>
+      <p><strong>Project:</strong> Build a simple mobile version of an existing feature (e.g., notes list) with Expo; test on device.</p>
+      <p><strong>Milestone:</strong> Ship a basic native app and understand mobile app anatomy.</p>
+    </section>
+
+    <section class="card month" id="m38">
+      <h3>Month 38 — React Native Navigation & State (Learn)</h3>
+      <p><strong>Learn:</strong> Deep navigation patterns (stacks, tabs, drawers), handling params, native stack vs JS stack; state management (Context/Zustand/Redux) in RN.</p>
+      <p><strong>Aware:</strong> Native UI module considerations (performance).</p>
+      <p><strong>Project:</strong> Build an app with multiple screens (auth flow + main app) and persistent local storage (AsyncStorage).</p>
+      <p><strong>Milestone:</strong> Multi-screen native apps with navigation and local persistence.</p>
+    </section>
+
+    <section class="card month" id="m39">
+      <h3>Month 39 — Connecting React Native to MERN Backend (Master)</h3>
+      <p><strong>Master:</strong> Networking in RN (fetch/Axios), secure token handling, offline-first basics and sync strategies.</p>
+      <p><strong>Learn:</strong> Push notifications basics, background fetch awareness.</p>
+      <p><strong>Project:</strong> Connect mobile app to your MERN API: auth, fetch user data, create/update items.</p>
+      <p><strong>Milestone:</strong> Mobile + backend integrated with secure auth and data sync basics.</p>
+    </section>
+
+    <section class="card month" id="m40">
+      <h3>Month 40 — Performance, Native Features & Device APIs (Learn)</h3>
+      <p><strong>Learn:</strong> Performance tuning in RN, list virtualization (FlatList), using native device APIs (camera, geolocation) via Expo or native modules.</p>
+      <p><strong>Aware:</strong> App size & build configuration tradeoffs.</p>
+      <p><strong>Project:</strong> Add a device feature (photo upload or geolocation) to your mobile app and sync to backend.</p>
+      <p><strong>Milestone:</strong> Use device capabilities and handle performance-sensitive lists.</p>
+    </section>
+
+    <section class="card month" id="m41">
+      <h3>Month 41 — Publishing & App Stores (Learn)</h3>
+      <p><strong>Learn:</strong> App signing, store listings (Google Play &amp; Apple App Store basics), release pipelines with EAS or Fastlane basics.</p>
+      <p><strong>Aware:</strong> App review process timelines & store policies.</p>
+      <p><strong>Project:</strong> Prepare an APK / IPA with Expo EAS (or build via CLI) and create store assets draft.</p>
+      <p><strong>Milestone:</strong> Understand publishing process and have a signed build ready for submission.</p>
+    </section>
+
+    <section class="card month" id="m42">
+      <h3>Month 42 — Final Polish, Portfolio & Job Prep (Master)</h3>
+      <p><strong>Master:</strong> Portfolio & resume polish, interview prep (system design for web, JS fundamentals, React questions), coding challenges practice.</p>
+      <p><strong>Learn:</strong> How to present projects: architecture diagrams, readme, live demos, write-ups.</p>
+      <p><strong>Project:</strong> Finalize 2–3 showcase projects (1 MERN web app, 1 React Native app, 1 polished portfolio). Publish them live and add case studies.</p>
+      <p><strong>Milestone:</strong> You are ready to apply for mid-level MERN/React Native roles or freelance projects with a strong portfolio.</p>
+    </section>
+
+  </main>
+
+  <aside id="tables" class="tables">
+    <h2>Quick Reference Tables</h2>
+
+    <section class="table-card">
+      <h3>Essential Git &amp; GitHub commands</h3>
+      <table>
+        <thead><tr><th>Task</th><th>Command</th></tr></thead>
+        <tbody>
+          <tr><td>Initialize repo</td><td><code>git init</code></td></tr>
+          <tr><td>Clone</td><td><code>git clone &lt;url&gt;</code></td></tr>
+          <tr><td>Stage &amp; commit</td><td><code>git add . &amp;&amp; git commit -m "msg"</code></td></tr>
+          <tr><td>Create branch</td><td><code>git checkout -b feature/name</code></td></tr>
+          <tr><td>Push branch</td><td><code>git push -u origin feature/name</code></td></tr>
+          <tr><td>Pull updates</td><td><code>git pull</code></td></tr>
+          <tr><td>Merge branch</td><td><code>git checkout main &amp;&amp; git merge feature/name</code></td></tr>
+          <tr><td>Fork &amp; PR</td><td>Use GitHub UI: fork → clone your fork → PR from fork to upstream.</td></tr>
+          <tr><td>Resolve conflicts</td><td>Open files, fix conflicts, <code>git add</code>, then commit.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="table-card">
+      <h3>CSS Animations vs JS Animations</h3>
+      <table>
+        <thead><tr><th>Characteristic</th><th>CSS</th><th>JS</th></tr></thead>
+        <tbody>
+          <tr><td>Best for</td><td>UI transitions, simple micro-interactions</td><td>Complex timelines, physics, dynamic control</td></tr>
+          <tr><td>Performance</td><td>Better (GPU-accelerated transforms)</td><td>Can be worse if heavy DOM writes</td></tr>
+          <tr><td>Control</td><td>Less granular at runtime</td><td>More granular &amp; interruptible</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="table-card">
+      <h3>Hosting / Deployment Options</h3>
+      <table>
+        <thead><tr><th>Type</th><th>Good for</th><th>Examples</th></tr></thead>
+        <tbody>
+          <tr><td>Static sites</td><td>Portfolio, docs</td><td>GitHub Pages, Netlify, Vercel</td></tr>
+          <tr><td>Full-stack small apps</td><td>APIs + server</td><td>Render, Heroku, Railway</td></tr>
+          <tr><td>Serverless functions</td><td>Small APIs</td><td>Vercel, Netlify Functions, AWS Lambda</td></tr>
+          <tr><td>Production (scalable)</td><td>Complex systems</td><td>AWS/GCP/Azure</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </aside>
+
+  <section id="resources" class="resources">
+    <h2>Core Free Resources & YouTube Channels</h2>
+    <ul>
+      <li><strong>Documentation & Guides</strong>: <a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a>, <a href="https://javascript.info/" target="_blank">JavaScript.info</a>, <a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a>, <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a>.</li>
+      <li><strong>React &amp; Node</strong>: Official React docs, <a href="https://expressjs.com/" target="_blank">Express docs</a>, <a href="https://www.mongodb.com/docs/" target="_blank">MongoDB docs</a>.</li>
+      <li><strong>YouTube</strong>: Traversy Media, The Net Ninja, Fireship, Ben Awad, Web Dev Simplified — search their playlists for React, Node, MongoDB, etc.</li>
+      <li><strong>Interactive</strong>: Frontend Mentor (UI challenges), LeetCode (algorithms for interviews), HackerRank.</li>
+      <li><strong>React Native</strong>: Expo docs, React Native docs, The Net Ninja React Native playlist.</li>
+    </ul>
+  </section>
+
+  <section id="notes" class="notes">
+    <h2>Notes & Tips</h2>
+    <ul>
+      <li>Be consistent: small daily practice (3–4 hours) compounds fast.</li>
+      <li>Balance learning and building — ship small projects frequently.</li>
+      <li>Keep README and case study for each project — explain architecture, tradeoffs, and what you learned.</li>
+      <li>When stuck: read docs first, then search (MDN, Stack Overflow), then ask for help (Discord, Stack Overflow, Mastodon, or come back here!).</li>
+    </ul>
+  </section>
+
+  <footer class="site-footer">
+    <p>Roadmap generated for you — copy both files into a repo and deploy. If you want a table-only reformat later, I’ll produce it on request.</p>
+    <p>Good luck — build, break, fix, repeat 🚀</p>
+  </footer>
+
+</body>
+</html>
