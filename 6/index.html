@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q and blockquote</title>
+    
+    <style>
+        :root {
+            font-size: 10px;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-size: 2rem;
+        }
+        h1 {
+           text-align: center;
+        }
+        blockquote {
+            display: inline;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        span {
+            display: inline-block;
+            margin: 1rem;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        abbr {
+            text-decoration: none;
+            color: blueviolet;
+        }
+        dt {
+            color: rgba(31, 123, 139, 0.705);
+        }
+        wbr {
+            color: blue;
+        }
+        .gt {
+            width: 10rem;
+            height: 10rem;
+            border: 1px solid green;
+            border-radius: 2rem;
+            margin: 0 auto;
+            display: grid;
+            place-items: center;
+            font-size: 8rem;
+            color: blue;
+        }
+        .linking {
+            padding: 2rem;
+            width: fit-content;
+            height: auto;
+            border: 1px solid rgb(95, 88, 110);
+            border-radius: 1rem;
+
+            h2 {
+                border-bottom: 0.2rem solid rgb(95, 88, 110);
+            }
+            p {
+                text-align: center;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            span {
+                display: flex;
+                justify-content: space-around;
+                font-size: 2.5rem;
+
+                a {
+                    text-decoration: none;
+                }
+                a:hover {
+                    color: blue;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .mail {
+            padding: 0.5rem;
+            border: 1px solid rgb(226, 214, 204);
+            border-radius: 1rem;
+            
+            a {text-decoration: none;}
+        }
+        .mail:hover {
+            border: 2px solid blue;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <h1>
+        The <code>&lt;q&gt; and &lt;blockquote&gt;</code> elements examples
+    </h1>
+    <p>
+       This is <q>Mozilla developer Network.</q>
+    </p>
+    <!-- blocquote, abbr, em, and cite elements -->
+        <blockquote cite="developer-mozilla.org"><abbr title="Mozilla developer Network"><a href="https://www.developer.mozilla.org">M D N</a></abbr></blockquote><span>is a top online platform, Then</span> <blockquote ><a href="https://www.javascript.info">Javascript.info</a> is another one but for <em>Javascript only.</em></blockquote>
+
+        <!-- <dl> and <dfn> elements -->
+    <p>
+        <dl>
+            <dt>Javascript :</dt>
+            <dd><dfn>Javascript</dfn> is the language of the web</dd>
+        </dl>
+    </p> 
+    <!-- Example linking -->
+     <div class="linking">
+        <h2>Example of Links to another page and id of an element</h2>
+        <span>
+             <p><a href="../1/index.html">example</a></p>
+    <p><a href="../1/index.html#m2026-01" target="_top">Month 5</a></p>
+        </span>
+     </div>
+
+       <!-- <s>, <del>, <ins> elements. -->
+
+        <p>
+            This paragraph is for illustration <s>and</s> example only. <br>
+            this one is for <del>del</del> <code> del</code> example. <br>
+            this is for <code>&lt;ins&gt;</code> element, <ins>inserted</ins>    
+        </p>
+        <!-- <wbr> element -->
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas culpa Supercalifragilisticexpialidocious<wbr>Loremlaborum modi ut quod corrupti a, debitis ex earum excepturi perferendis pariatur deleniti ea explicabo soluta omnis deserunt inventore in sint, aliquam dolorem porro minima. Nam quis iusto, perspiciatis nulla dolore aperiam neque blanditiis aspernatur culpa dignissimos, delectus, optio veritatis!</p>
+
+        <!-- &gt; emphasizing example -->
+
+    <div class="gt">&gt;</div>
+
+    <!-- <map> and <area> example -->
+        <div>
+             <h1>Image Map Example</h1>
+    <img src="example-image.jpg" usemap="#image-map" alt="Example Image" width="600" height="400">
+
+    <map name="image-map">
+        <area shape="rect" coords="34,44,270,350" href="https://example.com/rectangle" alt="Rectangle Area">
+        <area shape="circle" coords="337,300,44" href="https://example.com/circle" alt="Circle Area">
+        <area shape="poly" coords="300,100,400,200,350,300" href="https://example.com/polygon" alt="Polygon Area">
+    </map>
+        </div>
+        <span class="mail"> <a href="mailto:mutukamanaweweopd@gmail.com">Mail Us</a></span>
+       
+</body>
+</html>
