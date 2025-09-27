@@ -1,0 +1,109 @@
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+}
+
+html {
+    background-color: rgb(216, 205, 193);
+    font-size: 10px;
+}
+/* body {
+    margin: 0;
+} */
+body {
+    font-size: 190%;
+    max-width: 98vw;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+/* root styles */
+
+:root {
+    --bgcol-global: rgba(62, 163, 71, 0.678);
+}
+
+/* HEADER, FOOTER AND MAIN STYLING */
+header {
+    border-radius: 0.5rem 0.5rem 0 0; 
+}
+footer {
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+main {
+    display: flex;
+}
+main h2 {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+
+header h1 img {
+        width: 5rem;
+        height: auto;
+    }
+header h1 {
+    width: 100%;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    color: rgb(54, 50, 50);
+    padding: 2.5rem;
+}
+h1, h2 {
+     font-family: "Cinzel Decorative", cursive;
+}
+h1 {
+    text-shadow:2px 2px 10px black
+}
+
+/* ASIDE STYLING */
+
+aside {
+    max-width: 35%;
+    margin-left: 1rem;
+
+}
+
+
+aside img {
+  float: right;
+  width: 45%;
+  max-width: 100%;
+  border-radius: 0.5rem;
+  margin: 0.3rem;
+}
+
+header, main, footer {
+    background-color: var(--bgcol-global);
+    margin: 0.2rem;
+    padding: 1rem;
+
+}
+article, aside {
+    background-color: var(--bgcol-global);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.nav-ul {
+     background-color: var(--bgcol-global);
+     list-style-type: none;
+     display: flex;
+     text-transform: uppercase;
+     width: 98%;
+     margin: 0 auto;
+     justify-content: space-around;
+     padding: 1rem;
+     border-radius: 1rem;
+
+     a {
+        text-decoration: none;
+        font-size: 2.2rem;
+     }
+
+}
+
+

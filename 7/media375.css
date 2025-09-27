@@ -1,0 +1,94 @@
+/* MEDIA FOR SMARTPHONES */
+
+@media only screen and (max-width: 380px){
+
+    body {
+        font-size: 165%;
+        max-width: 100vw;
+        line-height: 1.5;
+        margin: 0;
+    }
+    
+/* root styles */
+
+:root {
+    --bgcol-global: rgba(62, 163, 71, 0.678);
+}
+/* HEADER, FOOTER AND MAIN STYLING */
+header {
+    border-radius: 0.25rem 0.25rem 0 0; 
+}
+footer {
+    border-radius: 0 0 0.25rem 0.25rem;
+}
+
+/* HEADER STYLING */
+header h1 img {
+        width: 3rem;
+        height: auto;
+    }
+header h1 {
+    width: 100%;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    color: rgb(54, 50, 50);
+    padding: 1rem;
+}
+main {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+}
+main h2 {
+    text-align: center;
+    padding: 1rem;
+}
+/* ASIDE STYLING */
+
+aside {
+    max-width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+aside img {
+  /* float: right; */
+  width: 98%;
+  max-width: 100%;
+  border-radius: 0.5rem;
+  margin: 1%;
+}
+
+aside h2{font-size: 1.8rem;}
+
+header, main, footer {
+    background-color: var(--bgcol-global);
+    margin: 0.1rem;
+    padding: 0.5rem;
+
+}
+article, aside {
+    background-color: var(--bgcol-global);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+/* navigation styles */
+
+.nav-ul {
+     background-color: var(--bgcol-global);
+     list-style-type: none;
+     display: flex;
+     /* text-transform: uppercase; */
+     width: auto;
+     /* margin: 0 auto; */
+     /* justify-content: space-around; */
+     padding: 0.3rem;
+     /* border-radius: 1rem; */
+
+
+     a {
+        text-decoration: none;
+        font-size: 2.2rem;
+     }
+    }}
