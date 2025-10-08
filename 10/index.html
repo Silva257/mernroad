@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Table template</title>
+    <link href="minimal-table.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1>Table template</h1>
+    <table>
+  <tr>
+    <th colspan="2">Animals</th>
+  </tr>
+  <tr>
+    <th colspan="2">Hippopotamus</th>
+  </tr>
+  <tr>
+    <th rowspan="2">Horse</th>
+    <td>Mare</td>
+  </tr>
+  <tr>
+  <td>Stallion</td>
+  </tr>
+  <tr>
+    <th colspan="2">Crocodile</th>
+  </tr>
+  <tr>
+    <th rowspan="2">Chicken</th>
+    <td>Hen</td>
+  </tr>
+  <tr>
+    <td>Rooster</td>
+  </tr>
+</table><br>
+<table>
+  <caption>Second Table</caption>
+<thead>
+  <tr>
+    <th></th>
+    <th></th>
+    <th id="clothes" colspan="3">Clothes</th>
+  </tr>
+  <tr>
+    <th></th>
+    <th></th>
+    <th id="trousers" headers="clothes">Trousers</th>
+    <th id="skirts" headers="clothes">Skirts</th>
+    <th id="dresses" headers="clothes">Dresses</th>
+  </tr>
+</thead>
+
+<tbody>
+  <tr>
+    <th id="belgium" rowspan="2">Belgium <br>bruxells <br>Bujumbura <br>kigali</th>
+    <th id="antwerp" headers="belgium">Antwerp</th>
+    <td headers="belgium antwerp clothes trousers">56</td>
+    <td headers="belgium antwerp clothes skirts">22</td>
+    <td headers="belgium antwerp clothes dresses">43</td>
+  </tr>
+  
+  <tr>
+    <th id="ghent" headers="belgium">Ghent</th>
+    <td headers="belgium ghent clothes trousers">41</td>
+    <td headers="belgium ghent clothes skirts">17</td>
+    <td headers="belgium ghent clothes dresses">35</td>
+  </tr>
+</tbody>
+
+</table>
+  </body>
+</html>
