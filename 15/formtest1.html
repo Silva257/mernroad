@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Test One</title>
+    <style>
+        form {
+            padding: 1rem;
+            border: 1px solid;
+            max-width: fit-content;
+            border-radius: 1rem;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 0;
+        }
+        fieldset {
+            margin-bottom: 1rem;
+        }
+        textarea {
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="./formtest1.html" method="post" >
+        <h2>Register for the meetup</h2>
+        <fieldset id="form1">
+            <legend>Choose hotel room type:</legend>
+            <div>
+                <input type="radio" name="hotel" id="cheap" checked>
+                <label for="cheap">Economy (+$0)</label>
+
+                <input type="radio" name="hotel" id="medium">
+                <label for="medium">Economy (+$50)</label>
+
+                <input type="radio" name="hotel" id="expensive">
+                <label for="expensive">Economy (+$150)</label>
+            </div>
+        </fieldset>
+        <fieldset id="form2">
+            <legend>Choose classes to attend:</legend>
+            <div>
+                <input type="checkbox" name="yoga" id="yoga">
+                <label for="yoga">Yoga (+$10)</label>
+
+                 <input type="checkbox" name="coffe roasting" id="coffee" checked>
+                <label for="coffee">Coffee roasting (+$20)</label>
+
+                 <input type="checkbox" name="Blloon animal art" id="balloon">
+                <label for="balloon">Balloon animal art (+$5)</label>
+            </div>
+        </fieldset>
+
+        <label for="selection">How are you getting here: </label>
+        <select name="selection" id="selection">
+            <option value="">--Please choose an option--</option>
+            <option value="">Plane</option>
+            <option value="">Bike</option>
+            <option value="">Bus</option>
+            <option value="">Train</option>
+            <option value="">Motocycle</option>
+            <option value="">Walk</option>
+        </select>
+        <p>
+        <label for="comments">Any other comments: </label>
+        <textarea name="comments" id="comments" cols="33" rows="5"></textarea>
+        </p>
+        <p>
+        <button type="submit">Continue to payment</button>
+        </p>
+
+        <img src="https://mdn.github.io/shared-assets/images/examples/learn/woodland-strip.jpg" width="450px" height="40px" alt="image from github(MDN)">
+
+    </form>
+</body>
+</html>
