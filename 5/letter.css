@@ -1,5 +1,6 @@
 html {
     font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
 }
 body {
     font-size: 16px;
@@ -9,7 +10,7 @@ header {
     max-width: 100vw;
 }
 .sec1, .sec2, section,p {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     width: 100%;
     
 }
