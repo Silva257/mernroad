@@ -9,12 +9,16 @@
             font-family: Arial, sans-serif;
             margin: 20px;
             line-height: 1.6;
+            width: 100%;
         }
         details {
             margin: 10px 0;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
+        }
+        details summary{
+            list-style: default;
         }
         output {
             font-weight: bold;
@@ -24,6 +28,120 @@
             width: 100%;
             height: 20px;
         }
+        .data-tooltip {
+            color: rgba(41, 136, 41, 0.767);
+        }
+        .data-tooltip:hover {
+            color: blueviolet;
+            cursor: progress;
+        }
+        .par-mod {
+            background-color: rgb(233, 213, 188);
+            width: 50%;
+            padding-bottom: 1rem;
+            border-radius: 0.7rem;
+            margin: auto;
+            border: 2px solid;
+        }
+        .par-mod h3 {
+            text-align: center;
+            font-size: 1.8rem;
+            padding-top: 1rem;
+            border-bottom: 2px solid white;
+        }
+        .modal {
+            text-align: center;
+            width: 90%;
+            background-color: rgb(231, 185, 185);
+            margin: auto;
+            border-radius: 10px;
+            padding: 1rem;
+
+            button {
+                font-size: 1.3rem;
+                border-radius: 5px;
+            }
+            p {
+                border-bottom: 2px solid white; 
+            }
+        }
+           .modal button:hover {
+            color: white;
+            background-color: blueviolet;
+           }
+           .modal p::first-letter {
+            text-transform: capitalize;
+           }
+           .clos {
+            display: none;
+            border: 2px solid blue;
+
+            p {
+                border-bottom-color: blue;
+            }
+           }
+           .div {
+            background-color: rgb(236, 236, 230);
+            padding: 1rem;
+            border-radius: 1rem;
+            max-width: 450px;
+            margin: auto;
+            text-align: center;
+
+            button {
+                padding: 0.5rem;
+                border: none;
+                font-size: 1.2rem;
+                background-color: rgb(223, 197, 247);
+                border-radius: 5px;
+                max-width: 150px;
+            }
+            button:hover {
+                color: white;
+                background-color: blueviolet;
+            }
+            .dropdown:hover ul {
+                display: block;
+            }
+            .dropdown {
+                position: relative;
+                width: 150px;
+                margin: auto;
+            }
+            ul {
+                    list-style: none;
+                    text-align: start;
+                    width: 145px;
+                    padding-left: 0;
+                    margin: auto;
+                    box-shadow: 2px 4px 3px 0.8px grey;
+                    display: none;
+                    position: absolute;
+                    z-index: 1;
+                    top: 2.2rem;
+                    left: 0;
+                    background-color: white;
+                    border-radius: 0 0 5px 5px;
+            }
+            ul li a {
+                color: black;
+                text-decoration: none;
+                padding: 0.5rem;
+                display: block;
+            }
+            a:hover {
+                color: rgb(22, 22, 216);
+                cursor: pointer;
+                border-bottom: 1px solid rgb(116, 116, 182);
+                background-color: lightgrey;
+            } 
+
+           }
+           .modal-drpDown {
+           display: flex;
+           flex-direction: column-reverse;
+           gap: 1rem;
+           }
     </style>
 </head>
 <body>
@@ -76,5 +194,62 @@
 <!-- Calling out a specific week number -->
 <time datetime="2016-W04">The fourth week of 2016</time>
 
+<!-- tooltip example -->
+
+<div>
+    <h2>tooltip</h2>
+    <p>Hover on <span class="data-tooltip" title="This is a tooltip data">tooltip</span> to see the data inside</p>
+</div>
+
+<section class="modal-drpDown">
+<!-- Modal example -->
+ <div class="par-mod">
+    <h3>Modal</h3>
+ <div class="op modal" id="openModal">
+    <p>open modal</p>
+    <button type="button" id="op-modal">open</button>
+ </div>
+ <div class="clos modal" id="closModal">
+    <p>close modal</p>
+    <button type="button" id="clos-modal">close</button>
+ </div>
+ </div>
+
+ <!-- DROPDDOWNS -->
+
+ <div class="div">
+    <h2>Dropdown example</h2>
+    <p>After hovering the button , the <b>dropdown</b> content will appear.</p>
+    <div class="dropdown">
+        <button type="button">view dropdown</button>
+        <ul>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">what we do</a></li>
+          <li><a href="#">Home</a></li>
+        </ul>
+    </div>
+ </div>
+ </section>
+
+ <!-- SCRIPTS -->
+ <script>
+    const openModalButton = document.getElementById('op-modal')
+    const closeModalButton = document.getElementById('clos-modal')
+    const opMod = document.getElementById('openModal')
+    const clMod = document.getElementById('closModal')
+
+    openModalButton.addEventListener('click', ()=>{
+      opMod.style.display= 'none' ;
+      clMod.style.display= 'block'; 
+      clMod.style.backgroundColor= 'lightcyan';
+
+    //   close modal
+    closeModalButton.addEventListener('click', ()=>{
+         opMod.style.display= 'block';
+         clMod.style.display= 'none'; 
+    })
+    })
+ </script>
 </body>
 </html>
