@@ -39,6 +39,10 @@ h1 {
     margin-top: 5px;
 }
   p {margin: 0;}
+  a {
+    color: black;
+    text-decoration: none;
+  }
 
 h1, .item-image {
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.8);
