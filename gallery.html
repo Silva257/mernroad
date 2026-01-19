@@ -4,7 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gallery</title>
-    <link rel="stylesheet" href="style.css">
+<style>
+    * {
+        box-sizing: border-box;     
+    }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .gallery {
+        width: 98%;
+        columns: 5 150px;
+        margin: 0 auto;
+        overflow: auto;
+    }
+    img {
+        display: block;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+</style>
 </head>
 
 <body>
@@ -14,7 +34,7 @@
    <div class="gallery">
         <div class="item-image">
             <a href="./images/one.jpg" target="_blank">
-            <img src="./images/one.jpg" alt="failed to load" width="200" >
+            <img src="./images/one.jpg" alt="failed to load" width="250" >
             </a>
             <p></p>
         </div>
@@ -82,7 +102,7 @@
             </a>
         </div>
         <div class="item-image"><a href="./images/15.jpg"  target="_blank">
-             <img src="./images/15.jpg" alt="failed to load" width="250" >
+             <img src="./images/15.jpg" alt="failed to load" width="250"  >
             <p></p></a>
         </div>
         <div class="item-image">

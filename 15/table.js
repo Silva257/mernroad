@@ -1,23 +1,28 @@
-function map(f, a) {
-  const result = new Array(a.length);
-  for (let i = 0; i < a.length; i++) {
-    result[i] = f(a[i]);
-  }
-  return result;
-}
-
-const numbers = [0, 1, 2, 5, 10];
-const cubedNumbers = map(function (x) {
-  return x * x * x;
-}, numbers);
-console.log(cubedNumbers); // [0, 1, 8, 125, 1000]
 
 const tst = document.getElementById('test');
-const cap = document.getElementById("cp")
+const cap = document.getElementById("cp");
+
 tst.addEventListener("click", ()=>{
-    alert("HELLO JAVASCRIPT");  setTimeout(() => {
-      cap.style.color = "black"
+   
+    setTimeout(() => {
+      cap.style.backgroundColor = "black"
     }, 1500);
+    setTimeout(() => {
+      cap.style.backgroundColor = "green"
+    }, 2500);
+    setTimeout(() => {
+      cap.style.backgroundColor = "blue"
+    }, 3500);
+    setTimeout(() => {
+      cap.style.backgroundColor = "grey"
+    }, 4500);
+    setTimeout(() => {
+      cap.style.backgroundColor = "purple"
+    }, 5500);
+    setTimeout(() => {
+      cap.style.backgroundColor = "white"
+      cap.style.color = "blue"
+    }, 7500);
     tst.style.padding = "0.5rem";
      tst.style.borderRadius = "6px";
     cap.style.color = "red";

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 10px;
+            background-color: white;
+        }
+        body {
+            font-size: 18px;
+            max-width: 90%;
+            border-radius: 1rem;
+            padding: 0 1rem;
+
+        }
+        h1, h2, h3, h4 {
+            text-align: center;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            /* grid-template-rows: 80px 200px 80px; */
+            grid-template-areas:
+            "header header header header"
+            "menu content content content"
+            "footer footer footer footer";
+            gap: 3px;
+            background-color: dodgerblue;
+            border: 3px solid dodgerblue;
+        }
+        .header, .menu, .content, .footer{background-color: white; padding: 1rem 10px;}
+        .header {grid-area: header;}
+        .menu {grid-area: menu;}
+        .content {grid-area: content;}
+        .footer {grid-area: footer; }
+      
+        /* styling the second grid container */
+     
+      section {
+            display: grid;
+            /* grid-template-columns: 20% repeat(4, 1fr) 20%; */
+            /* grid-template-columns: auto; */
+            /* grid-template-rows: auto repeat(2, 1fr) auto; */
+             /* grid-template-rows: auto; */
+            /* grid-template-areas: "hd hd hd hd hd hd"
+                                 "li main main main main ad"
+                                 "li main main main main as"
+                                 "ft ft ft ft ft ft"; */
+            grid-template-areas: "hd  hd hd"
+                                 "li  main ad"
+                                 "li  main as"
+                                 "ft ft ft";
+            gap: 10px;
+            .head, .ads, .side, .main-content, .li, .foot {
+                                    border: 1px solid green;
+                                    padding: 10px;
+                                    background-color: rgba(117,122,122,255);
+            }
+            margin-top: 10px;  
+            .li ul {list-style: none;}                
+        }
+        .head {grid-area: hd; padding: 5px;}
+        .ads {grid-area: ad;}
+        .main-content {grid-area: main;}
+        .li {grid-area: li;}
+        .foot {grid-area: ft;}
+        .side {grid-area: as;}
+
+        li a {
+                text-decoration: none;
+            }
+
+        @media screen and (max-width: 800px) {
+            section {
+                display: grid;
+                grid-template-columns: 30% repeat(3, 1fr);
+                grid-template-rows: auto auto 1fr auto ;
+                grid-template-areas:
+                 "hd hd hd hd"
+                 "li li li li"
+                 "as main main main"  
+                 "ad ft ft ft";
+            }
+            .li ul {
+                display: flex;
+                justify-content: space-between;
+                padding: 0;
+                .li ul {list-style: none;}
+            }
+          
+        }
+        @media screen and (max-width: 600px){
+            section{
+                display: block;
+            }
+            .head, .ads, .side, .main-content, .li, .foot{
+                margin-top: 5px;
+                border-radius: 5px;
+            }
+            .li ul {list-style: none;}
+        }
+        .tooltip {
+            position: relative;
+        }
+        .tooltip:hover{
+             cursor: pointer;
+        }
+        .data-tooltip {
+            position: absolute;
+            left: 120%;
+            background-color: rgb(181, 141, 219);
+            /* left: 50%;
+            transform: translate(-50%); */
+            z-index: 1;
+            font-size: 3rem;
+            padding: 5px;
+            border-radius: 1rem;
+            /* display: none; */
+            visibility: hidden;
+        }
+        .tooltip:hover .data-tooltip {
+            visibility: visible;
+        }
+        .data-tooltip::before {
+            content: '';
+            border: 5px;
+            border-color: transparent rgb(112, 56, 112) transparent transparent;
+            right: 100%;
+            border-style: solid;
+            position: absolute;
+            top: 50%;
+            margin-top: -5px;
+        }
+        .grid{
+            display: inline-block;
+        }
+        .tooltip:hover .grid {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS <span class="grid">Grid</span> <span class="tooltip">Layout <span class="data-tooltip">grid </span></span></h1>
+
+<p>The Grid Layout Module offers a grid-based layout system, with rows and columns.</p>
+<p>The Grid Layout Module makes it easy to design complex and responsive web pages without using floats and positioning:</p>
+
+<div class="container">
+  <div class="header"><h2>My Header</h2></div>
+  <div class="menu">
+  <a href="#">Link 1</a><br>
+  <a href="#">Link 2</a><br>
+  <a href="#">Link 3</a>
+  </div>
+  <div class="content">
+  <h3>Lorem Ipsum</h3>
+  <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Ridiculus sit nisl laoreet facilisis aliquet. Potenti dignissim litora eget montes rhoncus sapien neque urna. Cursus libero sapien integer magnis ligula lobortis quam ut.</p>
+  </div>
+  <div class="footer">
+  <h4>Footer</h4>
+  </div>
+</div>
+
+<!-- second grid example -->
+<section>
+    <header class="head">
+        <h3>Header/Company Logo</h3>
+    </header>
+    <nav class="li">
+        <ul>
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">Link2</a></li>
+            <li><a href="#">Link3</a></li>
+        </ul>
+    </nav>
+    <aside class="side"><p>Sidebar</p></aside>
+    <main class="main-content">
+        <h2>Content area</h2>
+        <p>Here we display the sections in source order for screens less than 576 pixels wide.</p>
+        <p>Then, we go to a two column layout for screens between 576 and 767 pixels wide.</p>
+        <p>Then, we go to a three column layout for screens over 767 pixels wide.</p>
+        <p>Resize the browser window to see the responsive effect.</p>
+    </main>
+    <div class="ads"><p>Ads</p></div>
+    <footer class="foot"><p>The footer</p></footer>
+</section>
+</body>
+</html>

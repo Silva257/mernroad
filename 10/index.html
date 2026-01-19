@@ -33,17 +33,18 @@
     <td>Rooster</td>
   </tr>
 </table><br>
+
 <table>
   <caption>Second Table</caption>
 <thead>
   <tr>
-    <th></th>
-    <th></th>
+    <th colspan="2" rowspan="2"></th>
+    <!-- <th></th> -->
     <th id="clothes" colspan="3">Clothes</th>
   </tr>
   <tr>
-    <th></th>
-    <th></th>
+    <!-- <th></th>
+    <th></th> -->
     <th id="trousers" headers="clothes">Trousers</th>
     <th id="skirts" headers="clothes">Skirts</th>
     <th id="dresses" headers="clothes">Dresses</th>
@@ -66,7 +67,47 @@
     <td headers="belgium ghent clothes dresses">35</td>
   </tr>
 </tbody>
-
 </table>
+
+<!-- example two -->
+ <table>
+  <tr>
+    <th colspan="2">Animals</th>
+  </tr>
+  <tr>
+    <th colspan="2">Hippopotamus</th>
+  </tr>
+  <tr>
+    <th rowspan="2">Horse</th>
+    <td>Mare</td>
+  </tr>
+  <tr><td>Stallion</td></tr>
+ </table>
+
+ <table>
+  <caption>THIRD EXAMPLE</caption>
+  <tr>
+    <th colspan="2" rowspan="2"></th>
+    <th colspan="3" scope="colgroup">Clothes</th>
+  </tr>
+  <tr>
+    <th>Trousers</th>
+    <th>Skirts</th>
+    <th>Dresses</th>
+  </tr>
+  <tr>
+    <th rowspan="2">Bruxelles <br>Kampala <br> Bujumbura <br>Kigali</th>
+    <th scope="row">Antwelp</th>
+    <td>56</td>
+    <td>22</td>
+    <td>43</td>
+  </tr>
+  <tr>
+    <th>Ghent</th>
+    <td>41</td>
+    <td>17</td>
+    <td>35</td>
+  </tr>
+ </table>
   </body>
 </html>

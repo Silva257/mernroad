@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second Counter css</title>
+    <style>
+     body {
+        background-color: rgb(233, 222, 222);
+     }
+     ul {list-style-type: none;}
+     .ul-one {
+        counter-reset: lst;
+     }
+     .ul-one > li::before {
+        counter-increment: lst;
+        content: """ " counter(lst, upper-roman)". ";
+        font-size: 1.2rem;
+     }
+    </style>
+</head>
+<body>
+    <h1>counters Section</h1>
+   
+    <h1>Settlements .</h1>
+    <ul class="ul-one">
+        <li>Nakivale</li>
+        <li>Rwamwanja</li>
+        <li>Kyangwali</li>
+        <li class="sec-ul">Kyaka II :
+            <ul>
+                <li>bukere</li>
+                <li>sweswe</li>
+                <li>itambabiniga
+                    <ul>
+                        <li>ruchinga</li>
+                        <li>central</li>
+                        <li>humura</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <h1>Nested counters</h1>
+
+    <h2>Javassript</h2>
+    <h3>Introduction</h3>
+    <h3>variables</h3>
+    <h3>exercises</h3>
+    <h3>projects</h3>
+     <h2>Python</h2>
+    <h3>Introduction</h3>
+    <h3>variables</h3>
+    <h3>exercises</h3>
+    <h3>projects</h3>
+     <h2>PHP</h2>
+    <h3>Introduction</h3>
+    <h3>variables</h3>
+    <h3>exercises</h3>
+     <h2>React Native</h2>
+    <h3>Introduction</h3>
+    <h3>variables</h3>
+    <h3>exercises</h3>
+    <h3>projects</h3>
+</body>
+</html>

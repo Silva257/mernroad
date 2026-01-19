@@ -6,11 +6,10 @@ body {
 }
 
 h2 {
-    /* border-bottom: 2.5px solid green; */
     padding: 1rem;
     width: fit-content;
-    box-shadow: 0 3px 5px 0 rgb(75, 57, 57);
-    border-radius: 0.8rem;
+    box-shadow: 0 3px 10px  rgb(75, 57, 57);
+    border-radius: 0.8rem; 
 }
 .dropdown {
     background-color: rgb(234, 243, 243);
@@ -31,13 +30,12 @@ h2 {
     padding: 0.5rem;
     border-radius: 3px;
     position: absolute;
-    min-width: 90%;
     margin: auto;
-    left: 50%;
     top: 100%;
     text-align: center;
-    transform: translateX(-50%); /* Center the dropdown */
+    /* transform: translateX(-50%); Center the dropdown */
     z-index: 1;
+    /* white-space: nowrap; */
 }
 .drp-content:hover {
    cursor: pointer;
@@ -59,7 +57,7 @@ ul {
 }
 a {
     text-decoration: none;
-    display: block;
+    display: inline-block;
     padding: 0.5rem 1rem;
 }
 a:hover {
@@ -86,3 +84,14 @@ a:hover {
 p {
     width: 50%;
 }
+ 
+ .dropd {
+    position: relative;
+ }
+.dropd ul {
+   display: none;
+   flex-direction: column;
+   position: absolute;
+   right: 0;
+ }
+ .dropd:hover ul{display: flex}

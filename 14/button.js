@@ -1,9 +1,8 @@
 const btn = document.getElementById('button');
+const defaultValue = btn.textContent;
 btn.addEventListener("click", () => {
-    btn.textContent = "I have been clicked";
-    // btn:hover.style.backgroundColor = "orange"
+    btn.textContent = "Annet Silva ";
     setTimeout(() => {
-    btn.textContent = "Press me";
-    // btn.style.backgroundColor = "transparent"
-  }, 1000);
+    btn.textContent = defaultValue;
+  }, 3000);
 } )

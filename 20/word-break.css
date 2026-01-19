@@ -1,0 +1,42 @@
+/* p {
+    width: 300px;
+    padding: 5px;
+    overflow: hidden;
+    text-indent: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border: 1px solid rgb(156, 132, 132);
+}
+p:empty {
+    display: none;
+}
+p:hover {
+    height: fit-content;
+    cursor: pointer;
+    white-space: wrap;
+
+    code {
+        white-space: nowrap;
+        text-decoration: underline;
+    }
+} */
+p {
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+p:hover {
+    white-space: wrap;
+}
+
+/* STYLES  */
+.styles{
+    border: 1.5px solid;
+    cursor: pointer;
+    white-space: wrap;
+    height: fit-content;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0 0 cyan;
+    padding: 1rem;
+}

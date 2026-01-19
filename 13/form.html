@@ -57,9 +57,9 @@
            <p>
               <label for="password" name="password">Password: 
             </label>
-            <input type="text" name="password" placeholder="password" required>
+            <input type="password" name="password" placeholder="password" required>
           </p>
-          <button type="reset">submit</button>
+          <button type="submit">submit</button>
         </form><br>
 
     <form action="./payment_page" method="get">
@@ -67,9 +67,7 @@
       <fieldset>
         <legend>Choose hotel room type:</legend>
         <div>
-          <input
-            type="radio"
-            id="hotelChoice1"
+          <input type="radio" id="hotelChoice1"
             name="hotel"
             value="economy"
             checked 
@@ -115,11 +113,18 @@
       </p>
       <p>
         <label for="comments">Any other comments:</label>
-        <textarea id="comments" name="comments" rows="5" cols="35"></textarea>
+        <textarea id="comments" name="comments" rows="5" cols="30"></textarea>
       </p>
       <p>
         <button type="submit">Continue to payment</button>
       </p>
+    </form>
+    <form action="">
+      <caption>THIS IS MY FORM</caption>
+      <div>
+        <label for="name">write your name:</label>
+        <input type="text" name="myName" id="name">
+      </div>
     </form>
 </body>
 </html>

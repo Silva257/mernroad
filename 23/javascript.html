@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+
+    <script>
+       
+      document.addEventListener('DOMContentLoaded', () => {
+       const myName = document.getElementById('name');
+       const result = document.getElementById('result');
+       const btn = document.getElementById('submitButton');
+       const myHeader = document.getElementById('h-one');
+
+       btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (myName.value != ''){
+            result.textContent = `Welcome in our company mr ${myName.value}`;
+            myHeader.textContent = `HOW ARE YOU ${myName.value}`;
+        }else{
+            alert('Please enter the name first')
+        }
+       })
+      })
+    </script>
+    <style>
+        .result {
+            padding: 1rem;
+            margin: 2rem;
+            font-size: 2rem;
+            max-width: 500px;
+            color: blue;
+        }
+        figure{
+            /* background-color: bisque; */
+            width: 300px;
+            box-shadow: 0 4px 4px 0;
+            border-radius: 0.5rem;
+        }
+        figure img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+        figure h2, figcaption {
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h-one"></h1>
+    <p>How old are you ?</p>
+    <form>
+         <label for="name">What is your name</label>
+         <input type="text" id="name" name="age" placeholder="enter your name">
+         <button type="submit" id="submitButton">send</button>
+    </form>
+    <p id="result" class="result"></p>
+    <h2>My Profile</h2>
+    <figure>
+        <img src="../images/12.jpg" alt="myImage" width="300">
+        <h2>Patrick</h2>
+        <figcaption>Photo of a <i>QUOTE</i></figcaption>
+    </figure>
+</body>
+</html>

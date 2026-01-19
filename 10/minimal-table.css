@@ -1,6 +1,7 @@
 table {
     border: 1px solid purple;
     border-collapse: collapse;
+    margin-top: 10px;
 }
 th {
     background-color: rgb(236, 234, 230);
@@ -14,8 +15,4 @@ th:nth-child(3) {
 }
 caption {
     text-transform: uppercase;
-    padding: 1rem;
-    border: 0.2px solid rgb(151, 170, 151);
-    margin-bottom: 0.5rem;
-    border-radius: 2rem;
 }

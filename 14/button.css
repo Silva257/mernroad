@@ -17,9 +17,12 @@ button {
     background-color: rgb(36, 129, 129);
     font-size: 1.5rem;
 }
-button::after {
+button:hover::after {
     content: "WAOUH"
 }
 button:hover {
     background-color: rgb(200, 233, 222);
+}
+div:empty {
+    display: none;
 }

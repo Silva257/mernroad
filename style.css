@@ -1,10 +1,18 @@
+* {
+     box-sizing: border-box;
+}
 html {
     max-width: 100vw;
 }
 body {
     width: 100%;
-    box-sizing: border-box;
     margin: 0;
+
+    counter-reset: Image;
+}
+p::before {
+    counter-increment: Image ;
+    content: "Image" " : " counter(Image);
 }
 header {
     width: 100%;
@@ -20,8 +28,6 @@ h1 {
     max-width: 400px;
     margin: auto;
     top: 0;
-    /* left: 50%;
-    transform: translate(-50%); */
     z-index: 1;
 }
 .gallery {
@@ -37,6 +43,7 @@ h1 {
     width: calc(25% - 30px);
     font-size: 1.2rem;
     margin-top: 5px;
+
 }
   p {margin: 0;}
   a {

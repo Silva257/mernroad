@@ -15,7 +15,7 @@
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
-  margin:0;
+  margin: 0;
   background: linear-gradient(180deg,#071028 0%, #07182e 200%);
   color: #e6eef8;
   -webkit-font-smoothing:antialiased;
