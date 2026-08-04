@@ -21,7 +21,7 @@ div {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 5% auto;
-    counter-reset: section;
+    counter-reset: article;
 }
 h1 {
     margin-top: 0;
@@ -30,17 +30,16 @@ h1 {
     box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     padding-top: 5px;
-    counter-reset: subsection;
+    counter-reset: h2;
     }
+
     h1::before {
-        counter-increment: section;
-        content: 'Lang '
-        counter(section, upper-roman )': ';
+        counter-increment: article;
+        content: "Lang " counter(article, upper-roman)". ";
     }
     h2::before {
-        counter-increment: subsection;
-        content: '' counter(section)'.'
-        counter(subsection)". "
+        counter-increment: h2;
+        content: "" counter(article, upper-roman)". " counter(h2)". ";
     }
 
 article {
@@ -51,6 +50,7 @@ article {
     border-radius: 8px;
     padding-left: 2rem;
     border-left: 3px solid;
+    counter-increment: ;
 }
 
 div:empty {
